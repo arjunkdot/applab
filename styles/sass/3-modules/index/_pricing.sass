@@ -1,0 +1,139 @@
+.pricing-container 
+    max-width: $condensed-width
+    margin: 5rem auto
+
+    &--main
+        max-width: 550px
+        margin: 0 auto
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        margin-bottom: 3rem
+        p
+         width: 650px
+
+    &--action
+        width: 250px
+        margin: 5rem auto
+        .switch
+            position: relative
+            display: inline-block
+            
+            input
+                opacity: 0
+                width: 0
+                height: 0
+
+        .slider
+            position: absolute
+            cursor: pointer
+            background-color: $white
+            border: 1px solid $original-grey
+            border-radius: 1.5rem
+            padding: 0.5rem 1rem
+            height: 50px
+            width: 250px
+            +ease-in-out(0.3s)
+            
+            &:after
+                content: "Annually"
+                position: absolute
+                right: 10px
+                bottom: 10px
+                text-align: center
+                padding: 0 1rem
+                color: $font-secondary
+
+            &:before
+                position: absolute
+                content: "Monthly"
+                height: 26px
+                width: 100px
+                left: 3px
+                bottom: 3px
+                text-align: center
+                background-color: $primary
+                color: $white
+                border-radius: 1.5rem
+                padding: 0.5rem 1rem
+                +ease-in-out(0.3s)
+
+        input
+            &:checked + .slider
+                background-color: $white
+                border: 1px solid $original-grey
+                border-radius: 1.5rem
+                padding: 0.5rem 1rem
+                height: 50px
+                width: 250px
+
+            &:checked + .slider:before
+                content: "Annually"
+                -webkit-transform: translateX(110px)
+                -ms-transform: translateX(110px)
+                transform: translateX(110px)
+
+            &:checked + .slider:after
+                content: "Monthly"
+                position: absolute
+                left: 10px
+                bottom: 12px
+                text-align: left
+                padding: 0 1rem
+                color: $font-secondary
+        .slider.round
+        border-radius: 50%
+
+        &:before
+            border-radius: 50%
+
+.pricing-container--tables
+    display: flex
+    justify-content: center
+    margin: 5rem 0
+    &--card
+        background-color: $white
+        border-radius: 0.5rem
+        box-shadow: 2px 22px 48px -1px rgba(213,213,213,0.75)
+        -webkit-box-shadow: 2px 22px 48px -1px rgba(213,213,213,0.75)
+        -moz-box-shadow: 2px 22px 48px -1px rgba(213,213,213,0.75)
+
+        .rate
+            padding: 1rem 2rem
+            background: rgb(2,0,36)
+            background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(244,247,249,1) 100%)
+            width: 250px
+            text-align: center
+            .price
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                .duration
+                    margin-top: 1rem
+                h1
+                    font-size: $font-xl
+                p
+                    color: $font-pricing-grey
+            h2
+                font-size: $font-reg
+            p
+                color: $font-pricing-grey
+                font-size: $font-sm
+        .perks
+            color: $font-pricing-grey
+            font-size: $font-sm
+            text-align: center
+            margin-top: 1.5rem
+            li
+                margin-bottom: 1rem
+                &:nth-child(4)
+                    margin-bottom: 2.5rem
+                &:last-child
+                    margin-top: 2rem
+                    margin-bottom: 2rem
+    .premium
+        margin-left: 2rem
+        border: 1px solid $dark-grey
