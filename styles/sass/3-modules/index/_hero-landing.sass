@@ -12,11 +12,11 @@
         h1
             font-size: $font-xl
             margin-bottom: 1rem
-        
+
         &--action
             margin-top: 3rem
             a.primary-button
-               margin-right: 1rem
+                margin-right: 1rem
 
         &--award
             display: flex
@@ -44,14 +44,20 @@
         height: 640px
         margin-top: -2rem
 
-
 .hero-background-container
     padding: 5rem
-    background-image: url('./../../assets/images/city_scape.png')
-    background-repeat: repeat-x
-    background-position: bottom;
-    z-index: $z-back
     position: relative
+
+.hero-city-background
+    background-image: url('./../../assets/images/city_scape.png')
+    position: absolute
+    background-repeat: repeat-x
+    background-position: bottom
+    left: 0
+    bottom: 0
+    height: 90%
+    width: 100%
+    z-index: $z-back
     
 .hero-shapes-background
     background-image: url('./../../assets/images/blue_orange.png')
