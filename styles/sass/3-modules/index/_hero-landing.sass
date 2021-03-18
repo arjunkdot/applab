@@ -1,0 +1,66 @@
+.hero-container
+    max-width: $max-width
+    margin: 0 auto
+    display: flex
+    justify-content: space-around
+    &--text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        width: 40%
+        margin-top: -5rem
+        h1
+            font-size: $font-xl
+            margin-bottom: 1rem
+        
+        &--action
+            margin-top: 3rem
+            a.primary-button
+               margin-right: 1rem
+
+        &--award
+            display: flex
+            align-items: flex-start
+            position: relative
+            margin-bottom: 1rem
+            .check-icon
+                background-color: $orange
+                padding: 0.5rem
+                display: inline-block
+                line-height: 0px
+                border-radius: 50%
+                img
+                    width: 16px
+                    height: auto
+            .editiors-choice-text
+                background-color: $dark-grey
+                color: $font-primary
+                padding: 0.2rem 1rem 0.2rem 2.5rem
+                border-radius: 1.5rem
+                position: absolute
+                z-index: $z-bottom
+    &--image
+        width: 350px
+        height: 640px
+        margin-top: -2rem
+
+
+.hero-background-container
+    padding: 5rem
+    background-image: url('./../../assets/images/city_scape.png')
+    background-repeat: repeat-x
+    background-position: bottom;
+    z-index: $z-back
+    position: relative
+    
+.hero-shapes-background
+    background-image: url('./../../assets/images/blue_orange.png')
+    background-repeat: no-repeat
+    background-position: top
+    background-size: contain
+    position: absolute
+    top: 0
+    right: 0
+    height: 100%
+    width: 100%
+    z-index: $z-bottom
