@@ -1,1 +1,1 @@
-{"version":3,"sources":["../sass/style.sass"],"names":[],"mappings":"AAAA,4EAGG"}
+{"version":3,"sources":["../sass/style.sass","../sass/2-base/_typography.sass","../sass/2-base/_reset.sass","../sass/0-variables/_colors.sass"],"names":[],"mappings":"AAAA,4EAGG,ACHH,0FAAY,ACAZ,EACE,SAAS,AACT,UAAU,AACV,sBAAsB,AACtB,uBAAwB,CAAG,AAE7B,MACC,eAAgB,CAAG,ADLpB,KACI,iCAAkC,CAAG,AAEzC,kBACI,iBAAiB,AACjB,aEYkB,CFZK,AAC3B,EACI,aEWoB,CFXK"}
