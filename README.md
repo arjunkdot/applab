@@ -2,7 +2,7 @@
 
 Converting PSD design to webpage using HTML and SASS.
 
-**Note:** Responsive view has not been added yet..
+**Note:** Responsive view has not been added yet.
 
 ## Credits
 Design credit: Ariful Rahman Tushar
